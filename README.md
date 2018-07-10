@@ -1,7 +1,7 @@
 This repository contains Dockerfile of Cloud9 IDE running on Alpine Linux for Docker's automated build published to the public Docker Hub Registry.
 
 # Base Docker Image
-Alpine Latest
+From centurylink/alpine-rails
 
 # Installation
 
