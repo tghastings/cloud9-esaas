@@ -46,13 +46,18 @@ You can add a workspace as a volume directory with the argument *-v /your-path/w
 
     docker run -d -p 80:80 -p 3000:3000 -v /your-path/workspace/:/workspace/ tghastings/cloud9-esaas
 
-# Step 4: Usage
+# Step 4: Accessing Cloud9
 
-You can now clone a rails repo or create your own using:
+    http://localhost
+
+# Step 5: Rails Usage
+
+You can now clone a rails repo or create a new application using the cloud9 terminal:
 
     rails new app_name
 
-# Step 5: Running Server
+# Step 6: Running Server
+
 After creating the new application cd into the directory and run the server:
 
     cd app_name
@@ -61,6 +66,6 @@ and run:
 
     rails s -b 0.0.0.0
 
-# Step 6: Accessing The Server
+# Step 7: Accessing The Server
 
     http://localhost:3000
