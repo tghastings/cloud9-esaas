@@ -38,10 +38,29 @@ Download automated build from public Docker Hub Registry:
 
     docker pull tghastings/cloud9-esaas
 
-# Step 3: Usage
+# Step 3: Running
 
     docker run -d -p 80:80 -p 3000:3000 tghastings/cloud9-esaas
     
 You can add a workspace as a volume directory with the argument *-v /your-path/workspace/:/workspace/* like this :
 
     docker run -d -p 80:80 -p 3000:3000 -v /your-path/workspace/:/workspace/ tghastings/cloud9-esaas
+
+# Step 4: Usage
+
+You can now clone a rails repo or create your own using:
+
+    rails new app_name
+
+# Step 5: Running Server
+After creating the new application cd into the directory and run the server:
+
+    cd app_name
+
+and run:
+
+    rails s -b 0.0.0.0
+
+# Step 6: Accessing The Server
+
+    http://localhost:3000
