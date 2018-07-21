@@ -1,6 +1,6 @@
-FROM centurylink/alpine-rails
+FROM tghastings/alpine-rails
 
-RUN apk --update add build-base g++ make curl wget openssl-dev apache2-utils git libxml2-dev sshfs nodejs bash tmux supervisor \
+RUN apk --update add build-base g++ make curl wget apache2-utils git libxml2-dev sshfs nodejs-npm bash tmux supervisor \
  && rm -f /var/cache/apk/* \
  && git clone https://github.com/c9/core.git /cloud9 \
  && cd cloud9 \
