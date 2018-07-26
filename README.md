@@ -42,9 +42,9 @@ Download automated build from public Docker Hub Registry:
 
     docker run -d -p 80:80 -p 3000:3000 tghastings/cloud9-esaas
     
-You can add a workspace as a volume directory with the argument *-v /your-path/workspace/:/workspace/* like this :
+You can mount a directory as a volume with the argument *-v /your-path/directory/:/root/environment/* like this :
 
-    docker run -d -p 80:80 -p 3000:3000 -v /your-path/workspace/:/workspace/ tghastings/cloud9-esaas
+    docker run -d -p 80:80 -p 3000:3000 -v /your-path/directory/:/root/environment/ tghastings/cloud9-esaas
 
 # Step 4: Accessing Cloud9
 
@@ -64,7 +64,7 @@ After creating the new application cd into the directory and run the server:
 
 and run:
 
-    rails s -b 0.0.0.0
+    rails s
 
 # Step 7: Accessing The Server
 

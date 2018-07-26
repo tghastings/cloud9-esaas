@@ -7,12 +7,12 @@ RUN apk --update add build-base g++ make curl wget apache2-utils git libxml2-dev
  && curl -s -L https://raw.githubusercontent.com/c9/install/master/link.sh | bash \
  && /cloud9/scripts/install-sdk.sh \
  && sed -i -e 's_127.0.0.1_0.0.0.0_g' /cloud9/configs/standalone.js \
- && mkdir /workspace \
+ && mkdir /root/environment \
  && mkdir -p /var/log/supervisor
 
 ADD supervisord.conf /etc/
 
-VOLUME /workspace
+VOLUME /root/environment
 
 EXPOSE 80 3000
 
