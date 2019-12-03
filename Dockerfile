@@ -1,4 +1,4 @@
-FROM tghastings/alpine-rails
+FROM tghastings/alpine-rails:latest
 
 RUN apk --update add build-base g++ make curl wget apache2-utils git libxml2-dev sshfs nodejs-npm bash tmux supervisor \
  && rm -f /var/cache/apk/* \
