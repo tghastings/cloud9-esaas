@@ -40,11 +40,11 @@ Download automated build from public Docker Hub Registry:
 
 # Step 3: Running
 
-    docker run -d -p 80:80 -p 3000:3000 tghastings/cloud9-esaas
+    docker run -d --network=host tghastings/cloud9-esaas
     
 You can mount a directory as a volume with the argument *-v /your-path/directory/:/root/environment/* like this :
 
-    docker run -d -p 80:80 -p 3000:3000 -v /your-path/directory/:/root/environment/ tghastings/cloud9-esaas
+    docker run -d --network=host -v /your-path/directory/:/root/environment/ tghastings/cloud9-esaas
 
 # Step 4: Accessing Cloud9
 
