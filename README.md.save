@@ -22,15 +22,15 @@ This repository contains Dockerfile of Cloud9 IDE running on Alpine Linux for Do
 
 ### Fedora
 
-    https://docs.docker.com/install/linux/docker-ce/fedora/
+    https://docs.docker.com/install/linux/docker-ce/fedora/ 
 
 ### Ubuntu
 
-    https://docs.docker.com/install/linux/docker-ce/ubuntu/
+    https://docs.docker.com/install/linux/docker-ce/ubuntu/ 
 
 ### Binaries
 
-    https://docs.docker.com/install/linux/docker-ce/binaries/
+    https://docs.docker.com/install/linux/docker-ce/binaries/ 
 
 # Step 2: Pull Image
 
@@ -40,11 +40,11 @@ Download automated build from public Docker Hub Registry:
 
 # Step 3: Running
 
-    docker run -d -p 80:80 -p 3000:3000 tghastings/cloud9-esaas
+    docker run -d --network=host tghastings/cloud9-esaas
+    
+You can mount a directory as a volume with the argument *-v /your-path/directory/:/root/environment/* like this :
 
-You can mount a directory as a volume with the argument \*-v /your-path/directory/:/root/ like this :
-
-    docker run -d -p 80:80 -p 3000:3000 -v /your-path/local/working/directory/:/root/ tghastings/cloud9-esaas
+    docker run -d --network=host -v /your-path/directory/:/root/en tghastings/cloud9-esaas
 
 # Step 4: Accessing Cloud9
 
@@ -64,7 +64,7 @@ After creating the new application cd into the directory and run the server:
 
 and run:
 
-    rails s -b 0.0.0.0
+    rails s
 
 # Step 7: Accessing The Server
 
