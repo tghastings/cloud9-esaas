@@ -10,7 +10,7 @@ This repository contains Dockerfile of Cloud9 IDE running on Alpine Linux for Do
 
 ### All Other Windows Editions
 
-Docker Toolbox works for other Windows OSes. Your motherboard/computer must support virtualization - most machines have this, but you may need to turn it on . To use Toolbox with machines running Windows 7 and up, there are three options, the directions below are the easiest.
+Docker Toolbox works for other Windows OSes. Your motherboard/computer must support virtualization - most machines have this, but you may need to turn it on. To use Toolbox with machines running Windows 7 and up, there are three options, the directions below are the easiest.
 
 Install docker-toolbox (requires virtualbox) to run the docker daemon in a linux instance (no GUI). Handles installation for you. All can be done by following these instructions: https://docs.docker.com/toolbox/toolbox_install_windows/
 
