@@ -18,7 +18,7 @@ In the terminal (the thing with a whale):
 docker run -d -p 80:80 -p 3000:3000 tghastings/cloud9-esaas
 ```
 
-In web browser: http://192.168.99.100This opens cloud9 in your browser.
+In web browser: http://192.168.99.100 This opens cloud9 in your browser.
 
 In cloud9 terminal:
 
