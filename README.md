@@ -2,9 +2,33 @@ This repository contains Dockerfile of Cloud9 IDE running on Alpine Linux for Do
 
 # Step 1: Docker Installation
 
-## Windows
+## Windows Pro
 
     https://docs.docker.com/docker-for-windows/install/
+
+## For Other Windows Users
+
+Docker Toolbox works for other Windows OSes. Your motherboard/computer must support virtualization - most machines have this, but you may need to turn it on . To use Toolbox with machines running Windows 7 and up, there are three options, the directions below are the easiest.
+
+Install docker-toolbox (requires virtualbox) to run the docker daemon in a linux instance (no GUI). Handles installation for you. All can be done by following these instructions: https://docs.docker.com/toolbox/toolbox_install_windows/
+
+In the terminal (the thing with a whale):
+
+```
+docker run -d -p 80:80 -p 3000:3000 tghastings/cloud9-esaas
+```
+
+In web browser: http://192.168.99.100This opens cloud9 in your browser.
+
+In cloud9 terminal:
+
+```
+rails new app
+cd app
+rails s -b 0.0.0.0
+```
+
+Back to your browser: http://192.168.99.100:3000/
 
 ## Mac
 
