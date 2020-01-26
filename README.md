@@ -10,27 +10,7 @@ This repository contains Dockerfile of Cloud9 IDE running on Alpine Linux for Do
 
 ### All Other Windows Editions
 
-Docker Toolbox works for other Windows OSes. Your motherboard/computer must support virtualization - most machines have this, but you may need to turn it on. To use Toolbox with machines running Windows 7 and up, there are three options, the directions below are the easiest.
-
-Install docker-toolbox (requires virtualbox) to run the docker daemon in a linux instance (no GUI). Handles installation for you. All can be done by following these instructions: https://docs.docker.com/toolbox/toolbox_install_windows/
-
-In the terminal (the thing with a whale):
-
-```
-docker run -d -p 80:80 -p 3000:3000 tghastings/cloud9-esaas
-```
-
-In web browser: http://192.168.99.100 This opens cloud9 in your browser.
-
-In cloud9 terminal:
-
-```
-rails new app
-cd app
-rails s -b 0.0.0.0
-```
-
-Back to your browser: http://192.168.99.100:3000/
+    https://docs.docker.com/toolbox/toolbox_install_windows/
 
 ## Mac
 
@@ -74,7 +54,13 @@ You can mount a directory as a volume with the argument \*-v /your-path/director
 
 # Step 4: Accessing Cloud9
 
+## Windows Pro, Windows Education, MacOS, & Linux
+
     http://localhost
+
+## All Other Windows
+
+    http://192.168.99.100
 
 # Step 5: Rails Usage
 
@@ -82,7 +68,7 @@ You can now clone a rails repo or create a new application using the cloud9 term
 
     rails new app_name
 
-# Step 6: Running Server
+# Step 6: Running the Rails Application
 
 After creating the new application cd into the directory and run the server:
 
@@ -92,6 +78,12 @@ and run:
 
     rails s -b 0.0.0.0
 
-# Step 7: Accessing The Server
+# Step 7: Accessing The Rails Application
+
+## Windows Pro, Windows Education, MacOS, & Linux
 
     http://localhost:3000
+
+## All Other Windows
+
+    http://192.168.99.100:3000
