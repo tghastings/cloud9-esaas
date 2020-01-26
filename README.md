@@ -12,7 +12,7 @@ This repository contains Dockerfile of Cloud9 IDE running on Alpine Linux for Do
 
     https://docs.docker.com/toolbox/toolbox_install_windows/
 
-## Mac
+## MacOS
 
     https://docs.docker.com/docker-for-mac/install/
 
