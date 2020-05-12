@@ -50,7 +50,7 @@ Download automated build from public Docker Hub Registry:
 
 You can mount a directory as a volume with the argument \*-v /your-path/directory/:/root/ like this :
 
-    docker run -d -p 80:80 -p 3000:3000 -v /your-path/local/working/directory/:/root/ tghastings/cloud9-esaas
+    docker run -d -p 80:80 -p 3000:3000 -v /your-path/local/working/directory/:/root/environment tghastings/cloud9-esaas
 
 # Step 4: Accessing Cloud9
 
