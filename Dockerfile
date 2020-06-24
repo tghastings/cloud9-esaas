@@ -1,6 +1,6 @@
 FROM tghastings/alpine-rails:latest
 
-RUN apk --update add build-base g++ make curl wget apache2-utils git libxml2-dev sshfs nodejs-npm bash supervisor libevent-dev ncurses-dev \
+RUN apk --update add build-base g++ make curl wget apache2-utils git libxml2-dev sshfs nodejs-npm yarn bash supervisor libevent-dev ncurses-dev \
   && rm -f /var/cache/apk/* \
   && wget https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz \
   && tar xf tmux-2.3.tar.gz && (cd tmux-2.3 && ./configure && make && make install) \
