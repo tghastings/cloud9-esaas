@@ -8,9 +8,9 @@ This repository contains Dockerfile of Cloud9 IDE running on Alpine Linux for Do
 
     https://docs.docker.com/docker-for-windows/install/
 
-### All Other Windows Editions
+### Windows Home
 
-    https://docs.docker.com/toolbox/toolbox_install_windows/
+    https://docs.docker.com/docker-for-windows/install-windows-home/
 
 ## MacOS
 
@@ -54,13 +54,10 @@ You can mount a directory as a volume with the argument \*-v /your-path/director
 
 # Step 4: Accessing Cloud9
 
-## Windows Pro, Windows Education, MacOS, & Linux
+## Windows, MacOS, & Linux
 
     http://localhost
 
-## All Other Windows
-
-    http://192.168.99.100
 
 # Step 5: Rails Usage
 
@@ -80,10 +77,6 @@ and run:
 
 # Step 7: Accessing The Rails Application
 
-## Windows Pro, Windows Education, MacOS, & Linux
+## Windows, MacOS, & Linux
 
     http://localhost:3000
-
-## All Other Windows
-
-    http://192.168.99.100:3000
